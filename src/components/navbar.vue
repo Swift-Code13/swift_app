@@ -45,6 +45,5 @@ export default {
 
   .active {
     font-weight: bold;
-    color: white;
   }
 </style>

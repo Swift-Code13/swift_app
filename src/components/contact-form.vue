@@ -1,5 +1,5 @@
 <template>
-    <br><center><h1>Formulaire de contact</h1></center><br>
+    <br><center><h1>Contactez-Nous</h1></center><br>
     <form method="post" action="process.php">
       <input type="text" id="name" name="name" placeholder="Nom" required>
 
