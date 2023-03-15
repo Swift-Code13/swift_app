@@ -1,8 +1,13 @@
+<template>
+    rara
+</template>
+
 <script>
 // @ is an alias to /src
 export default {
-  name: 'HomeView',
+  name: 'TeamView',
   components: {
+    
   }
 }
 </script>

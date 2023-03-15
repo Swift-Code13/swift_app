@@ -1,8 +1,13 @@
+<template>
+    pipi
+</template>
+
 <script>
 // @ is an alias to /src
 export default {
-  name: 'HomeView',
+  name: 'ProjectsView',
   components: {
+    
   }
 }
 </script>
