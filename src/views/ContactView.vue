@@ -1,8 +1,13 @@
+<template>
+    popo
+</template>
+
 <script>
 // @ is an alias to /src
 export default {
-  name: 'HomeView',
+  name: 'ContactView',
   components: {
+    
   }
 }
 </script>
