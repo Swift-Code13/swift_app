@@ -11,7 +11,7 @@
         <a class="nav-link" href="presentation">Présentation</a>
       </li>
       <li class="nav-item" :class="{ active: isActive('/projects') }">
-        <a class="nav-link" href="projects">Projets Réalisés</a>
+        <a class="nav-link" href="projects">Projets</a>
       </li>
       <li class="nav-item" :class="{ active: isActive('/team') }">
         <a class="nav-link" href="team">L'équipe</a>
@@ -45,6 +45,5 @@ export default {
 
   .active {
     font-weight: bold;
-    color: white;
   }
 </style>
