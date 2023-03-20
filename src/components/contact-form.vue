@@ -1,28 +1,40 @@
 <template>
-  <div id="form">
-    <div id="titre">
-      <br><center><h1>Contactez-Nous</h1></center><br>
-    </div>
-    <form method="post" action="process.php">
-      <div id="input-group">
-        <input type="text" id="name" name="name" required>
-        <label for="name"><i class="fa-sharp fa-solid fa-user"></i> Votre nom</label>
+  <div id="right">
+    <div id="form">
+      <div id="titre">
+        <br><center><h1>CONTACTEZ-NOUS</h1></center><br>
       </div>
-      <div id="input-group">
-        <input type="email" id="email" name="email" required>
-        <label for="email"><i class="fa-solid fa-at"></i> Votre email</label>
-      </div>
-      <div id="input-group">
-        <input type="text" id="subject" name="subject" required>
-        <label for="subject"><i class="fa-solid fa-envelope"></i> Votre Sujet</label>
-      </div>
-      <div id="input-group">
-        <textarea id="message" name="message" rows="5" required></textarea>
-        <label for="message"><i class="fa-solid fa-comments"></i> Votre Message</label>
-      </div>
+      <form method="post" action="process.php">
+        <div id="input-group">
+          <input type="text" id="name" name="name" required>
+          <label for="name"><i class="fa-sharp fa-solid fa-user"></i> Votre nom</label>
+        </div>
+        <div id="input-group">
+          <input type="email" id="email" name="email" required>
+          <label for="email"><i class="fa-solid fa-at"></i> Votre email</label>
+        </div>
+        <div id="input-group">
+          <input type="text" id="subject" name="subject" required>
+          <label for="subject"><i class="fa-solid fa-envelope"></i> Votre Sujet</label>
+        </div>
+        <div id="input-group">
+          <textarea id="message" name="message" rows="5" required></textarea>
+          <label for="message"><i class="fa-solid fa-comments"></i> Votre Message</label>
+        </div>
 
-      <center><input type="submit" value="Envoyer"></center>
-    </form>
+        <center><input type="submit" value="Envoyer"></center>
+      </form>
+    </div>
+  </div>
+  <div id="center"><span id="color"></span></div>
+  <div id="left">
+    <h1>EMPLACEMENT</h1>
+    <p><i class="fa-solid fa-location-dot"></i> Marseille</p>
+    <h1>SUIVEZ-NOUS</h1>
+    <i class="fa-brands fa-instagram"></i>
+    <i class="fa-brands fa-facebook"></i>
+    <i class="fa-brands fa-twitter"></i>
+    <i class="fa-brands fa-linkedin"></i>
   </div>
 </template>
 <style>
@@ -33,49 +45,37 @@
         color: white;
       }
       form {
-        max-width: 400px;
-        margin: 0 auto;
+        max-width: 600px;
+        width: 90%;
       }
       input,
       textarea {
         width: 100%;
         padding: 10px;
+        outline: 0;
+        background-color: white;
         box-sizing: border-box;
         margin-bottom: 10px;
-        resize: vertical;
         border-radius: 20px;
-        color: white;
-      }
-      input[type="text"], input[type="email"], textarea{
-        background-color: #62B0F5;
-      }
-
-      input::placeholder, textarea::placeholder {
-        color: #989797;
       }
       input[type="submit"] {
-        background-color: #62B0F5;
+        background-color: transparent;
         color: white;
-        padding: 10px 20px;
-        border: none;
+        width: 30%;
+        border: 2px solid white;
         cursor: pointer;
-        border-radius: 20px;
         transition: 0.7s;
+        border-radius: 5px;
       }
       input[type="submit"]:hover {
-        background-color: #114371;
+        background-color: #62B0F5;
         transition: 0.7s;
-        padding: 20px;
       }
       #form {
-        border: 4px solid #62B0F5;
-        width: 30%;
         padding: 30px;
-        margin: 5% auto auto;
-        border-radius: 30px;
       }
       label {
-        color: white;
+        color: gray;
         position: absolute;
         margin-bottom: 30px;
         left: 5px;
@@ -92,11 +92,47 @@
         font-size: 14px;
       }
       #titre {
-        background-color: #62B0F5;
-        width: 100%;
-        margin-bottom: 40px;
+        width: 85%;
+        margin-bottom: 10px;
         border-radius: 30px;
         font-family: 'Oswald', sans-serif;
+      }
+      #right {
+        margin-left: 60%;
+      }
+      #center {
+        width: 300px;
+        height: 0;
+        position: absolute;
+        top: 50%;
+        left: 53%;
+        transform: translate(-50%, -50%);
+        background: #62B0F5;
+        animation: anim 1s linear forwards;
+      }
+      #left {
+        position: absolute;
+        top: 15%;
+        left: 14%;
+      }
+      #left h1 {
+        font-family: 'Oswald', sans-serif;
+        margin-bottom: 20px;
+      }
+      #left i {
+        font-size: 30px;
+        margin-left: 15px;
+        color: white;
+      }
+      #left p {
+        color: gray;
+        font-family: 'Oswald', sans-serif;
+        font-size: 25px;
+      }
+      @keyframes anim {
+        100%{
+          height: 100%;
+        }
       }
     </style>
 <script>
