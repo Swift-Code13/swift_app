@@ -6,11 +6,31 @@
                 <a href="https://portfolioalexis.alwaysdata.net">
                 <p>Bastien<br>
                    Co-Fondateur <br>
+                   CMO <br>
                    Développeur Front-End</p></a>
             </div>
         </div>
-        <img src="image2.jpg" alt="Alexis">
-        <img src="image3.jpg" alt="Lucas">
+        <div class="image-container">
+            <img src="../assets/fabien.png" alt="Alexis">
+            <div class="overlay">
+                <a href="https://portfolioalexis.alwaysdata.net">
+                <p>Alexis<br>
+                   Co-Fondateur <br>
+                   CEO <br>
+                   Développeur Fullstack <br>
+                   </p></a>
+            </div>
+        </div>
+        <div class="image-container">
+            <img src="../assets/fabien.png" alt="Lucas">
+            <div class="overlay">
+                <a href="https://portfolioalexis.alwaysdata.net">
+                <p>Lucas<br>
+                   Co-Fondateur <br>
+                   CTO <br>
+                   Développeur Back-End</p></a>
+            </div>
+        </div>
     </div>
 </template>
 <style>
@@ -22,12 +42,14 @@
         margin-top: 10%;
         width: 280px;
         height: auto;
-        margin-right: 200px;
     }
 
 .image-container {
   position: relative;
   display: inline-block;
+  width: 280px;
+  margin-right: 50px;
+  margin-left: 50px;
 }
 
 .overlay {
