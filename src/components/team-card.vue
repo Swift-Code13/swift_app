@@ -42,6 +42,7 @@
         margin-top: 10%;
         width: 280px;
         height: auto;
+        border-radius: 5px;
     }
 
 .image-container {
@@ -81,6 +82,7 @@
 .image-container:hover .overlay {
   height: 80%;
   width: 280px;
+  border-radius: 5px;
 }
 
 .image-container:hover .overlay p {
