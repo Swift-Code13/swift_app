@@ -1,23 +1,23 @@
 <template>
 <div class="navbarsetc">
     <nav class="navbar navbar-expand-lg navbar-dark bg-black">
-  <a class="navbar-brand" href="/"><img src="../assets/SwiftAndCode.jpeg" alt=""></a>
+      <router-link to="/"><img :src="require(`@/assets/${logo}`)"></router-link>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav">
       <li class="nav-item" :class="{ active: isActive('/presentation') }">
-        <a class="nav-link" href="presentation">Présentation</a>
+        <router-link to="presentation" class="nav-link">Présentation</router-link>
       </li>
       <li class="nav-item" :class="{ active: isActive('/projects') }">
-        <a class="nav-link" href="projects">Projets</a>
+        <router-link to="projects" class="nav-link">Projets</router-link>
       </li>
       <li class="nav-item" :class="{ active: isActive('/team') }">
-        <a class="nav-link" href="team">L'équipe</a>
+        <router-link to="team" class="nav-link">L'équipe</router-link>
       </li>
       <li class="nav-item" :class="{ active: isActive('/contact') }">
-        <a class="nav-link" href="contact">Contact</a>
+        <router-link to="contact" class="nav-link">Contact</router-link>
       </li>
     </ul>
   </div>
@@ -32,6 +32,9 @@ export default {
     isActive(route) {
       return this.$route.path === route
     }
+  },
+  props: {
+    logo: String
   }
 }
 </script>
