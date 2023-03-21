@@ -1,5 +1,5 @@
 <template>
-    <navbar logo="SwiftAndCode.jpeg"/>
+    <navbar logo="SwiftAndCodeTeam.png"/>
     <h1>Membres de S&C</h1>
     <team_card></team_card>
 </template>

@@ -7,19 +7,19 @@
       <form method="post" action="process.php">
         <div id="input-group">
           <input type="text" id="name" name="name" required>
-          <label for="name"><i class="fa-sharp fa-solid fa-user"></i> Votre nom</label>
+          <label for="name"><i class="fa-sharp fa-solid fa-user"></i> Nom</label>
         </div>
         <div id="input-group">
           <input type="email" id="email" name="email" required>
-          <label for="email"><i class="fa-solid fa-at"></i> Votre email</label>
+          <label for="email"><i class="fa-solid fa-at"></i> Email</label>
         </div>
         <div id="input-group">
           <input type="text" id="subject" name="subject" required>
-          <label for="subject"><i class="fa-solid fa-envelope"></i> Votre Sujet</label>
+          <label for="subject"><i class="fa-solid fa-envelope"></i> Sujet</label>
         </div>
         <div id="input-group">
           <textarea id="message" name="message" rows="5" required></textarea>
-          <label for="message"><i class="fa-solid fa-comments"></i> Votre Message</label>
+          <label for="message"><i class="fa-solid fa-comments"></i> Message</label>
         </div>
 
         <center><input type="submit" value="Envoyer"></center>
@@ -38,9 +38,6 @@
   </div>
 </template>
 <style>
-      body {
-        font-family: Arial, sans-serif;
-      }
       h1{
         color: white;
       }
@@ -95,7 +92,6 @@
         width: 85%;
         margin-bottom: 10px;
         border-radius: 30px;
-        font-family: 'Oswald', sans-serif;
       }
       #right {
         margin-left: 60%;
@@ -109,6 +105,7 @@
         transform: translate(-50%, -50%);
         background: #62B0F5;
         animation: anim 1s linear forwards;
+        z-index: -1;
       }
       #left {
         position: absolute;
@@ -116,7 +113,6 @@
         left: 14%;
       }
       #left h1 {
-        font-family: 'Oswald', sans-serif;
         margin-bottom: 20px;
       }
       #left i {
@@ -126,7 +122,6 @@
       }
       #left p {
         color: gray;
-        font-family: 'Oswald', sans-serif;
         font-size: 25px;
       }
       @keyframes anim {

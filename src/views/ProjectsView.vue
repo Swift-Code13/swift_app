@@ -1,5 +1,5 @@
 <template>
-  <navbar logo="SwiftAndCode.jpeg"/>
+  <navbar logo="SwiftAndCodeProjetcs.png"/>
     pipi
 </template>
 
