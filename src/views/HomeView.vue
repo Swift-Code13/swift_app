@@ -1,5 +1,5 @@
 <template>
-  <navbar logo="SwiftAndCode.jpeg" />
+  <navbar logo="SwiftAndCodeHome.jpeg" />
   <body>
     <div class="container">
       <h1 class="title">Swift & Code<span class="square"></span></h1>
