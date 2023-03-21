@@ -35,7 +35,7 @@
 </template>
 <style>
     .photos {
-        top: 50%;
+        margin-top: 5%;
         text-align: center;
     }
     .photos img {
