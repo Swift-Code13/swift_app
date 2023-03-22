@@ -13,7 +13,7 @@
     </div>
   </body>
 </template>
-<style>
+<style scoped>
 body {
   margin: 0;
   padding: 0;
@@ -49,19 +49,19 @@ h3 {
   height: 100px;
   width: 100px;
   border-radius: 10px;
-  animation: move 4s ease-in-out infinite alternate;
+  animation: move 3s ease-in-out infinite alternate;
 }
 #rectangle1 {
   background-color: #62b0f5;
   top: 10%;
   left: 10%;
-  animation-delay: 0s;
+  animation-delay: 2s;
 }
 #rectangle2 {
   background-color: #ff9100;
   top: 30%;
   left: 30%;
-  animation-delay: 1s;
+  animation-delay: 2s;
 }
 #rectangle3 {
   background-color: #b866ff;
@@ -73,14 +73,15 @@ h3 {
   background-color: #ff7b66;
   top: 70%;
   left: 70%;
-  animation-delay: 3s;
+  animation-delay: 2s;
 }
 #rectangle5 {
   background-color: #ff7b66;
   width: 200px;
   top: 0;
   right: -100px;
-  animation-delay: 1s;
+  animation-delay: 2s;
+
 }
 #rectangle6 {
   background-color: #62b0f5;
@@ -88,12 +89,13 @@ h3 {
   bottom: 11%;
   left: -100px;
   animation-delay: 1s;
+
 }
 .square {
   display: inline-block;
   width: 20px;
   height: 20px;
-  background-color: orange;
+  background-color: #ff9100;
   margin-left: 5px;
   border-radius: 5px;
 }
@@ -103,9 +105,10 @@ h3 {
     transform: translate(0, 0);
   }
   to {
-    transform: translate(10px, 10px);
+    transform: translate(25px, 10px);
   }
 }
+
 .pink {
   animation: move-pink 2s ease-in-out infinite alternate;
 }
@@ -115,7 +118,7 @@ h3 {
     transform: translate(0, 0);
   }
   to {
-    transform: translate(10px);
+    transform: translate(15px);
   }
 }
 
@@ -125,9 +128,54 @@ h3 {
 
 @keyframes move-blue {
   from {
-    transform: translate(10px);
+    transform: translate(-15px);
   }
 }
+h1 {
+  position: relative;
+  overflow: hidden; /* cache le texte */
+  font-size: 36px; /* taille de la police */
+  letter-spacing: 4px; /* espacement entre les lettres */
+}
+
+h1::before {
+  content: ""; /* crée un pseudo-élément */
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 90%;
+  width: 2px;
+  background-color: #ffffff; /* couleur du curseur */
+  animation: blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0; /* le texte est caché */
+  }
+  to {
+    width: 75%; /* le texte est complètement affiché */
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+h1 {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 2s steps(30) forwards;
+}
+
+
 </style>
 <script>
 // @ is an alias to /src
