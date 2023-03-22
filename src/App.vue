@@ -6,6 +6,7 @@
   body {
     background-color: black;
     font-family: 'segoe-ui-semibold-regular', sans-serif;
+    overflow: hidden;
   }
 </style>
 <script>
